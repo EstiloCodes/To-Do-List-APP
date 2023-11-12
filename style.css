@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#00aaff,#fff);
+  }
+  
+  .container {
+    width: 40%;
+    min-height: 60vh;
+    background-color: beige;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .to-do-list {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    user-select: none;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    user-select: none;
+  }
+  
+  input[type="text"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1;
+    font-weight: bold;
+  }
+  
+  .submit {
+    background: #9595f7;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .submit i {
+    font-size: 1rem;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    max-height: 500px;
+    overflow:hidden;
+  }
+  
+  .list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+    font-weight: bolder;
+  }
+  
+  .list li:last-child {
+    border-bottom: none;
+  }
+  
+  .list li i {
+    cursor: pointer;
+  }
+  
+  .list li i:hover {
+    color: #ff0000;
+  }
+  
+  .list li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+  }
+  
+  .list li i {
+    margin-left: 80px;
+    margin-right: -120px; 
+  }
+  
+  .list li span {
+    flex: 1; 
+  }
+  
+  .list li div {
+    width: 100px; 
+  }
+  
+  .search input[type="text"] {
+    width: 100px; 
+  }
+  .list li::before {
+    content: "•"; 
+    margin-right: 5px;
+  }
+  .submit:hover {
+    animation: shake 0.4s;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateY(0); }
+    20% { transform: translateY(-1px); }
+    40% { transform: translateY(1px); }
+    60% { transform: translateY(-1px); }
+    80% { transform: translateY(1px); }
+    100% { transform: translateY(0); }
+  }
+  
+  
+  
+  .book-icon {
+    width: 40px; 
+    height: auto; 
+    margin-top: 10px; 
+    
+  }
+  @media only screen and (max-width: 700px) {
+    .container {
+      width: 95%; 
+      min-height: 80vh;
+    }
+  
+    .list {
+      max-height: none; 
+    }
+  
+    .list li {
+      font-size: 0.9rem; 
+      padding: 8px; 
+    }
+  
+    
+    .submit {
+      padding: 8px; 
+      margin-left: 10px; 
+    }
+  
+    
+  }
