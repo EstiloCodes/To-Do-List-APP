@@ -16,7 +16,7 @@
   .container {
     width: 40%;
     min-height: 60vh;
-    background-color: beige;
+    background-color: rgb(248, 215, 97);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
